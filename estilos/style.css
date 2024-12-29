@@ -1,0 +1,90 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #e4e3e3; /* Cor de fundo mais clara */
+    color: #000000; /* Cor do texto mais escura para melhor contraste */
+}
+
+header {
+    background-color: #800000; /* Vermelho mais escuro e vibrante */
+    color: white;
+    padding: 1rem 0;
+    text-align: center; /* Centraliza o título */
+}
+
+header > img {
+    max-width: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Adiciona margem abaixo do menu */
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px; /* Aumenta o espaçamento entre os itens do menu */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave na cor ao passar o mouse */
+}
+
+nav a:hover {
+    color: #eee; /* Cor mais clara ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.pizza {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo da pizza */
+}
+
+.precos {
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex; /* Usa flexbox para alinhar os preços */
+    justify-content: space-around; /* Distribui os preços igualmente */
+}
+
+.broto {
+    color: #000000; /* Vermelho para o preço broto */
+}
+
+.grande {
+    color: #000000; /* Verde para o preço grande */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > p > a {
+    text-decoration: underline;
+    color: white;
+}
