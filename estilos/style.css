@@ -1,4 +1,9 @@
-/* style.css */
+/* Style Mobile First */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -38,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #eee; /* Cor mais clara ao passar o mouse */
+    color: #d6d4d4; /* Cor mais clara ao passar o mouse */
 }
 
 main {
@@ -48,14 +53,14 @@ main {
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 15px;
 }
 
 .pizza {
     background-color: white;
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.684);
     text-align: center; /* Centraliza o conteúdo da pizza */
 }
 
