@@ -79,6 +79,14 @@ main > h2 {
     text-align: center; /* Centraliza o conteúdo da pizza */
 }
 
+.pizza img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
 .pizza > h3 {
     padding-bottom: 10px;
 }
