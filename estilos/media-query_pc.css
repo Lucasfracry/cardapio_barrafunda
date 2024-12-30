@@ -1,7 +1,18 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-@media (orientation: landscape) {
-    body {
-        background-color: black;
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (orientation: landscape){
+    .menu {
+        display: flexbox;
+        flex-direction: row;
     }
+
+    nav ul {
+        text-align: left;
+    }
+    
 }

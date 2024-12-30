@@ -1,10 +1,14 @@
 /* Style Mobile First */
-*{
-    padding: 0px;
-    margin: 0px;
+html, body {
+ margin: 0px;
+ padding: 0px;
+ height: 90%;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -16,12 +20,13 @@ body {
 header {
     background-color: #800000; /* Vermelho mais escuro e vibrante */
     color: white;
-    padding: 1rem 0;
+    padding-top: 1rem 0;
     text-align: center; /* Centraliza o título */
 }
 
 header > img {
-    max-width: 80px;
+    max-width: 100px;
+    margin: 10px;
 }
 
 nav ul {
@@ -31,8 +36,11 @@ nav ul {
 }
 
 nav li {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #b10000;
     display: inline;
-    margin: 0 15px; /* Aumenta o espaçamento entre os itens do menu */
+    margin: 0 5px; /* Aumenta o espaçamento entre os itens do menu */
 }
 
 nav a {
@@ -47,12 +55,19 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 15px;
+}
+
+main > h2 {
+    font-size: 2em;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 15px;
 }
 
@@ -62,6 +77,10 @@ main {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.684);
     text-align: center; /* Centraliza o conteúdo da pizza */
+}
+
+.pizza > h3 {
+    padding-bottom: 10px;
 }
 
 .precos {
@@ -83,10 +102,10 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
+    padding: 1em 0;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 footer > p > a {
