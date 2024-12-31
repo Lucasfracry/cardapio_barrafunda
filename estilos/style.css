@@ -54,6 +54,11 @@ nav a:hover {
     color: #d6d4d4; /* Cor mais clara ao passar o mouse */
 }
 
+.link_atual {
+    background-color: #b10000;
+    box-shadow: inset 1px 1px 57px 0px rgba(222, 123, 123, 0.572);
+}
+
 main {
     padding: 15px;
 }
