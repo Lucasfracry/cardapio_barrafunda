@@ -72,9 +72,13 @@ main > h2 {
 }
 
 .menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 .pizza {
@@ -83,6 +87,8 @@ main > h2 {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.684);
     text-align: center; /* Centraliza o conteúdo da pizza */
+    height: 100px;
+    width: 250px;
 }
 
 .pizza img {
